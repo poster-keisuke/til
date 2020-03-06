@@ -48,3 +48,4 @@ go version go1.13.8 darwin/amd64
 参考:
 - [Golangをgoenvを使ってインストールしてみた
 ](https://qiita.com/walkers/items/761b2a5e58849176a633)
+- [goenv/Installation](https://github.com/syndbg/goenv/blob/master/INSTALL.md)
