@@ -9,11 +9,14 @@ $ brew install --HEAD gonev
 ※ `--HEAD`をつけないと、Goの最新版がインストールできなかった。
 
 #### 2. pathを通す
-bash_profile / zprofileに以下を記載
+bash_profile / zshrc or zshenvに以下を記載
 ```
-export PATH="${GOPATH}/bin:$PATH"
+export GOENV_ROOT="$HOME/.goenv"
+export PATH="$GOENV_ROOT/bin:$PATH"
+eval "$(goenv init -)"
+export PATH="$GOROOT/bin:$PATH"
+export PATH="$PATH:$GOPATH/bin"
 ```
-他のページには、設定を色々変えているところがあるが、バージョンごとにディレクトリが変わるのでうまく設定されない。
 
 #### 3. 指定バージョンのインストール
 インストールできるバージョンの確認
@@ -33,7 +36,7 @@ $ goenv install 1.13.8
 #### 4. 設定
 使用するgoのバージョンを設定する
 ```shell
-$ goenv global 1.13.8
+$ goenv global/local 1.13.8
 ```
 
 設定されているか確認
