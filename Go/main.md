@@ -85,3 +85,27 @@ $ ./hello // Hello World
 
 - [Getting Started
   ](https://golang.org/doc/install)
+
+### Q&A
+
+#### Q: vscode 上で、GOPATH 及び GOROOT が読み込めない
+
+エラー文
+
+```
+Failed to run "go env" to find GOPATH as the "go" binary cannot be found in either GOROOT(undefined) or ...
+```
+
+#### A: ターミナルから GOPATH を引き継いだ状態で開き直す。
+
+```shell
+$ code .
+```
+
+GOPATH や GOROOT の環境情報を取得できる。
+
+また、再起動することで tools の再コンパイルが走る。（走らない場合もある。）
+
+参考:
+[VSCode で go tools のコマンドがみつからない。
+](https://qiita.com/tomlaw/items/df47acd61b70db3762e6)
