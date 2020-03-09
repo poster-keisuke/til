@@ -80,3 +80,8 @@ func main() {
 $ go build hello.go
 $ ./hello // Hello World
 ```
+
+参考:
+
+- [Getting Started
+  ](https://golang.org/doc/install)
