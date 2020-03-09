@@ -1,15 +1,21 @@
 ## Get Start
-### Go install
-goenvを利用して、Goをinstallする方法
 
-#### 1. goenvのインストール
+### Go install
+
+goenv を利用して、Go を install する方法
+
+#### 1. goenv のインストール
+
 ```shell
 $ brew install --HEAD gonev
 ```
-※ `--HEAD`をつけないと、Goの最新版がインストールできなかった。
 
-#### 2. pathを通す
-bash_profile / zshrc or zshenvに以下を記載
+※ `--HEAD`をつけないと、Go の最新版がインストールできなかった。
+
+#### 2. path を通す
+
+bash_profile / zshrc or zshenv に以下を記載
+
 ```
 export GOENV_ROOT="$HOME/.goenv"
 export PATH="$GOENV_ROOT/bin:$PATH"
@@ -19,7 +25,9 @@ export PATH="$PATH:$GOPATH/bin"
 ```
 
 #### 3. 指定バージョンのインストール
+
 インストールできるバージョンの確認
+
 ```
 $ goenv install -l
 Available versions:
@@ -29,23 +37,46 @@ Available versions:
 ```
 
 指定したバージョンをインストール
+
 ```shell
 $ goenv install 1.13.8
 ```
 
 #### 4. 設定
-使用するgoのバージョンを設定する
+
+使用する go のバージョンを設定する
+
 ```shell
 $ goenv global/local 1.13.8
 ```
 
 設定されているか確認
+
 ```shell
 $ go version 1.13.8
 go version go1.13.8 darwin/amd64
 ```
 
 参考:
-- [Golangをgoenvを使ってインストールしてみた
-](https://qiita.com/walkers/items/761b2a5e58849176a633)
+
+- [Golang を goenv を使ってインストールしてみた
+  ](https://qiita.com/walkers/items/761b2a5e58849176a633)
 - [goenv/Installation](https://github.com/syndbg/goenv/blob/master/INSTALL.md)
+
+### Hello World
+
+```go
+// hello.go
+package main
+
+import "fmt"
+
+func main() {
+  fmt.Printf("Hello World\n")
+}
+```
+
+```shell
+$ go build hello.go
+$ ./hello // Hello World
+```
