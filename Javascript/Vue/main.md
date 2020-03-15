@@ -4,6 +4,8 @@ Vue cli を使うと便利
 
 ```shell
 $ npm i -g vue/cli
+$ vue --version
+@vue/cli 4.2.3
 ```
 
 ※前のバージョンが残っている場合
