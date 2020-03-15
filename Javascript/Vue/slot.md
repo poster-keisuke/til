@@ -57,3 +57,19 @@ Slot を使うと、コンポーネントに対して動的な値を渡すこと
   </MediaBox>
 </template>
 ```
+
+一つだけ定義されていれば、もう片方が定義されていなくても呼び出しが可能。
+
+```
+// MediaBox.vue
+<slot name="heading"></slot>
+<slot></slot>
+
+// Parent.vue
+<template>
+  <MediaBox>
+    <h2 slot="heading">Poster-keisuke</h2>
+    <p>I'm here</p>
+  </MediaBox>
+</template>
+```
