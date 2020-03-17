@@ -60,7 +60,7 @@ Slot を使うと、コンポーネントに対して動的な値を渡すこと
 
 一つだけ定義されていれば、もう片方が定義されていなくても呼び出しが可能。
 
-```
+```js
 // MediaBox.vue
 <slot name="heading"></slot>
 <slot></slot>
