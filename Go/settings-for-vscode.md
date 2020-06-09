@@ -23,3 +23,7 @@
 ```
 
 - vscode のコマンドパレットから`go: Install/Update Tools`を実行し、`go-langserver`をインストール
+
+参考:
+
+- [vscode で go の設定をして lsp を動かしてみた](https://yuzu441.hateblo.jp/entry/2019/01/30/081500)
