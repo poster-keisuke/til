@@ -1,6 +1,6 @@
 ## Kubernetesとは
 
-[Kubernetes Overview](Infrastructure/Kubernetes/images/overview.png)
+[Kubernetes Overview](images/overview.png)
 
 Kubernetesはコンテナのオーケストラレーションツールである
 
@@ -42,7 +42,7 @@ DeploymentのPodを一般公開するには、ロードバランサー(Service)�
 
 ## コントロールプレーン
 
-[Kubernetes Cluster Image](Infrastructure/Kubernetes/images/clusterImage.png)
+[Kubernetes Cluster Image](images/clusterImage.png)
 
 - コントロールプレーンの役割はクラスタ全体の調整
 - コントロールプレーンが管理するコンポーネント
